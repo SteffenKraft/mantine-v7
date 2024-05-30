@@ -40,8 +40,8 @@ export const theme = createTheme({
   scale: 1,
   fontSmoothing: true,
   focusRing: 'auto',
-  white: '#fff',
-  black: '#000',
+  white: '#ffffff',
+  black: '#171717',
   colors: {
     green: [
       '#F0F9F6',
@@ -132,8 +132,7 @@ export const theme = createTheme({
   primaryColor: 'green',
   autoContrast: false,
   luminanceThreshold: 0.3,
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
+  fontFamily: 'Roboto',
   fontFamilyMonospace:
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
   respectReducedMotion: false,
@@ -147,43 +146,42 @@ export const theme = createTheme({
   activeClassName: 'mantine-active',
   focusClassName: '',
   headings: {
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
-    fontWeight: '700',
+    fontFamily: 'Roboto',
+    fontWeight: '500',
     textWrap: 'wrap',
     sizes: {
       h1: {
-        fontSize: 'calc(2.125rem * var(--mantine-scale))',
-        lineHeight: '1.3',
+        fontSize: 'calc(1.5rem * var(--mantine-scale))',
+        lineHeight: '32px',
       },
       h2: {
-        fontSize: 'calc(1.625rem * var(--mantine-scale))',
-        lineHeight: '1.35',
+        fontSize: 'calc(1.25rem * var(--mantine-scale))',
+        lineHeight: '28px',
       },
       h3: {
-        fontSize: 'calc(1.375rem * var(--mantine-scale))',
-        lineHeight: '1.4',
+        fontSize: 'calc(1rem * var(--mantine-scale))',
+        lineHeight: '24px',
       },
       h4: {
-        fontSize: 'calc(1.125rem * var(--mantine-scale))',
-        lineHeight: '1.45',
+        fontSize: 'calc(0.875rem * var(--mantine-scale))',
+        lineHeight: '20px',
       },
       h5: {
-        fontSize: 'calc(1rem * var(--mantine-scale))',
-        lineHeight: '1.5',
+        fontSize: 'calc(0.875rem * var(--mantine-scale))',
+        lineHeight: '20px',
       },
       h6: {
         fontSize: 'calc(0.875rem * var(--mantine-scale))',
-        lineHeight: '1.5',
+        lineHeight: '20px',
       },
     },
   },
   fontSizes: {
-    xs: 'calc(0.75rem * var(--mantine-scale))',
-    sm: 'calc(0.875rem * var(--mantine-scale))',
-    md: 'calc(1rem * var(--mantine-scale))',
-    lg: 'calc(1.125rem * var(--mantine-scale))',
-    xl: 'calc(1.25rem * var(--mantine-scale))',
+    xs: 'calc(0.65rem * var(--mantine-scale))',
+    sm: 'calc(0.75rem * var(--mantine-scale))',
+    md: 'calc(0.87rem * var(--mantine-scale))',
+    lg: 'calc(1rem * var(--mantine-scale))',
+    xl: 'calc(1.2rem * var(--mantine-scale))',
   },
   lineHeights: {
     xs: '1.4',
@@ -200,10 +198,11 @@ export const theme = createTheme({
     xl: 'calc(2rem * var(--mantine-scale))',
   },
   spacing: {
-    xs: 'calc(0.625rem * var(--mantine-scale))',
+    xxs: 'calc(0.25rem * var(--mantine-scale))',
+    xs: 'calc(0.5rem * var(--mantine-scale))',
     sm: 'calc(0.75rem * var(--mantine-scale))',
     md: 'calc(1rem * var(--mantine-scale))',
-    lg: 'calc(1.25rem * var(--mantine-scale))',
+    lg: 'calc(1.5rem * var(--mantine-scale))',
     xl: 'calc(2rem * var(--mantine-scale))',
   },
   breakpoints: {
@@ -216,7 +215,7 @@ export const theme = createTheme({
   shadows: {
     xs: '0 calc(0.0625rem * var(--mantine-scale)) calc(0.1875rem * var(--mantine-scale)) rgba(0, 0, 0, 0.05), 0 calc(0.0625rem * var(--mantine-scale)) calc(0.125rem * var(--mantine-scale)) rgba(0, 0, 0, 0.1)',
     sm: '0 calc(0.0625rem * var(--mantine-scale)) calc(0.1875rem * var(--mantine-scale)) rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 calc(0.625rem * var(--mantine-scale)) calc(0.9375rem * var(--mantine-scale)) calc(-0.3125rem * var(--mantine-scale)), rgba(0, 0, 0, 0.04) 0 calc(0.4375rem * var(--mantine-scale)) calc(0.4375rem * var(--mantine-scale)) calc(-0.3125rem * var(--mantine-scale))',
-    md: '0 calc(0.0625rem * var(--mantine-scale)) calc(0.1875rem * var(--mantine-scale)) rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 calc(1.25rem * var(--mantine-scale)) calc(1.5625rem * var(--mantine-scale)) calc(-0.3125rem * var(--mantine-scale)), rgba(0, 0, 0, 0.04) 0 calc(0.625rem * var(--mantine-scale)) calc(0.625rem * var(--mantine-scale)) calc(-0.3125rem * var(--mantine-scale))',
+    md: 'md: "0px 0px 2px rgba(23, 23, 23, 0.04), 0px 4px 8px rgba(77, 77, 77, 0.16)",',
     lg: '0 calc(0.0625rem * var(--mantine-scale)) calc(0.1875rem * var(--mantine-scale)) rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 calc(1.75rem * var(--mantine-scale)) calc(1.4375rem * var(--mantine-scale)) calc(-0.4375rem * var(--mantine-scale)), rgba(0, 0, 0, 0.04) 0 calc(0.75rem * var(--mantine-scale)) calc(0.75rem * var(--mantine-scale)) calc(-0.4375rem * var(--mantine-scale))',
     xl: '0 calc(0.0625rem * var(--mantine-scale)) calc(0.1875rem * var(--mantine-scale)) rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 calc(2.25rem * var(--mantine-scale)) calc(1.75rem * var(--mantine-scale)) calc(-0.4375rem * var(--mantine-scale)), rgba(0, 0, 0, 0.04) 0 calc(1.0625rem * var(--mantine-scale)) calc(1.0625rem * var(--mantine-scale)) calc(-0.4375rem * var(--mantine-scale))',
   },
