@@ -8,3 +8,27 @@
     font-size: rem(50px);
   }
 }
+
+.error {
+  background-color: var(--opensight-error-background-color);
+  border: 1px solid var(--opensight-error-border-color);
+  height: 200px;
+}
+
+.success {
+  background-color: var(--opensight-success-background-color);
+  border: 1px solid var(--opensight-success-border-color);
+  height: 200px;
+}
+
+.info {
+  background-color: var(--opensight-info-background-color);
+  border: 1px solid var(--opensight-info-border-color);
+  height: 200px;
+}
+
+.warning {
+  background-color: var(--opensight-warning-background-color);
+  border: 1px solid var(--opensight-warning-border-color);
+  height: 200px;
+}

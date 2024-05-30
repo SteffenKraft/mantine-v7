@@ -1,4 +1,4 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text, Grid } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
@@ -10,14 +10,20 @@ export function Welcome() {
           Mantine
         </Text>
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
-        Vite integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/vite/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit pages/Home.page.tsx file.
-      </Text>
+      <Grid>
+        <Grid.Col span={3}>
+          <div className={classes.error}>Test</div>
+        </Grid.Col>
+        <Grid.Col span={3}>
+          <div className={classes.success}>Test</div>
+        </Grid.Col>
+        <Grid.Col span={3}>
+          <div className={classes.info}>Test</div>
+        </Grid.Col>
+        <Grid.Col span={3}>
+          <div className={classes.warning}>Test</div>
+        </Grid.Col>
+      </Grid>
     </>
   );
 }

@@ -16,6 +16,8 @@ export const resolver: CSSVariablesResolver = (theme) => ({
 
     '--opensight-warning-background-color': theme.other.warningBackgroundColorLight,
     '--opensight-warning-border-color': theme.other.warningBorderColorLight,
+
+    '--mantine-color-text': '#171717',
   },
   dark: {
     '--opensight-error-background-color': theme.other.errorBackgroundColorDark,
@@ -29,6 +31,8 @@ export const resolver: CSSVariablesResolver = (theme) => ({
 
     '--opensight-warning-background-color': theme.other.warningBackgroundColorDark,
     '--opensight-warning-border-color': theme.other.warningBorderColorDark,
+
+    '--mantine-color-text': '#FFFFFF',
   },
 });
 
